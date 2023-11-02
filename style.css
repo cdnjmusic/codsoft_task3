@@ -10,23 +10,39 @@
 body{
     width: 100%;
     height: 100vh;
+    position: relative;
+    background: url("./0DNer7E-akatsuki-wallpaper-hd.jpg");
+}
+
+.container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    padding: 50px;
+}
+
+.name {
+    color: white;
+    font-size: 80px;
+    margin-top: 13%;
+}
+
+.short {
+    font-size: 12px;
+    font-style: italic;
 }
 
 .calculator{
-    border: 1px solid #686b73;
+    /* border: 1px solid #686b73; */
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
-    border-radius: 16px;
-    background: transparent;
+    width: 600px;
+    border-radius: 10px;
     box-shadow: 0px 3px 15px rgba(84, 95, 117, 0.5);
-
 }
 
 input{
-    width: 320px;
+    width: 535px;
     border: none;
     padding: 24px;
     margin: 10px;
@@ -44,21 +60,42 @@ input::placeholder{
 
 button{
     border: none;
-    width: 60px;
+    width: 115px;
     height: 60px;
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 0%;
     background: transparent;
     color: #ffffff;
     font-size: 20px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.107);
     cursor: pointer;
+    box-shadow: -5px -5px 12px rgb(44, 44, 44);
+}
+
+.btn:hover {
+    background-color: white;
+    color: #242424;
+    box-shadow: 0px 0px 15px white;
+    transition: ease-in-out 0.3s;
 }
 
 .equalBtn{
-    background-color: #fb7c14;
+    background-color: #ff1111;
+}
+
+.equalBtn:hover {
+    background-color: white;
+    color: #ff1111;
+    box-shadow: 0px 0px 15px white;
+    transition: ease-in-out 0.3s;
 }
 
 .operator{
-    color: #ff9101;
+    color: #ff1111;
+}
+
+.operator:hover {
+    background-color: #ff1111;
+    color: black;
+    box-shadow: 0px 0px 15px #ff1111;
+    transition: ease-in-out 0.3s;
 }
